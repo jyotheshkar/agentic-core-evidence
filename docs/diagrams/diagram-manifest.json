@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "project": "agentic-core-evidence",
+  "source_product": "System Architecture Workspace",
+  "source_site_version": 81,
+  "source_commit_sha": "4f583cb90bff726eada9a180a0eeba4118981a73",
+  "source_commit_at": "2026-10-24T13:40:20Z",
+  "publication_status": "prepared_for_publication",
+  "publication_url": null,
+  "library_binary_downloaded": false,
+  "runtime_claim": "Authored reference/target designs. AWS deployment and runtime validation pending.",
+  "review": {
+    "diagram_pixels": "Five selected PNGs inspected. No candidate records, actual credentials or private endpoints observed.",
+    "selected_svg_markup": "Current case-study SVGs contain no script, event handlers, hrefs or foreignObject elements.",
+    "editable_drawio": "Parsed successfully: eight pages; enterprise reference, distinct from current scoped case study.",
+    "source_integrity": "Each copied file SHA-256 matches source-file-allowlist and the final copied bytes.",
+    "sensitive_text": "Targeted private-URL/credential scan and text review passed for selected textual assets.",
+    "scope": "This review concerns the selected files, not all source history or operational cloud security."
+  },
+  "files": [
+    {
+      "project": "agentic-core-evidence",
+      "source_path": "dist/case-studies/agentic-core.png",
+      "export_path": "Agentic-Core-AWS-Target.png",
+      "role": "current_scoped_aws_target",
+      "maturity": "Design case study; AWS runtime validation pending.",
+      "source_commit_sha": "4f583cb90bff726eada9a180a0eeba4118981a73",
+      "git_blob_sha": "1852688f20dc664475b08834e54633f3faa2b194",
+      "sha256": "150e54dbe9ed58b8774840307d59cd143a7211a3996310319281df13d7c3f497",
+      "bytes": 1454501,
+      "unchanged_source_bytes": true,
+      "visual_review": "Diagram pixels reviewed; no candidate records, credentials or private endpoints visible."
+    },
+    {
+      "project": "agentic-core-evidence",
+      "source_path": "dist/case-studies/agentic-core.svg",
+      "export_path": "Agentic-Core-AWS-Target.svg",
+      "role": "current_scoped_aws_target",
+      "maturity": "Editable vector version of the current target design.",
+      "source_commit_sha": "4f583cb90bff726eada9a180a0eeba4118981a73",
+      "git_blob_sha": "9ce0592a3474c100b500bab71f0ee603463bfe9b",
+      "sha256": "03bbedd4cf786f3e7d563b32ab1805e0b0408f50110d3335e54cf65e0003351b",
+      "bytes": 24796,
+      "unchanged_source_bytes": true,
+      "visual_review": "Text/markup reviewed; no private repository URL or credential pattern found."
+    },
+    {
+      "project": "agentic-core-evidence",
+      "source_path": "dist/case-studies/agentic-core-case-study.md",
+      "export_path": "Agentic-Core-AWS-Case-Study.md",
+      "role": "current_case_study",
+      "maturity": "Authored design, choices, six-pillar analysis and pending evidence.",
+      "source_commit_sha": "4f583cb90bff726eada9a180a0eeba4118981a73",
+      "git_blob_sha": "76b4344b44b0e253ed65ea4aceede6c08ccae188",
+      "sha256": "0b20a0d60d7541111f703f6b55bdd89ca345d82560c50c387034a6cc0cb7ced3",
+      "bytes": 9231,
+      "unchanged_source_bytes": true,
+      "visual_review": "Text/markup reviewed; no private repository URL or credential pattern found."
+    },
+    {
+      "project": "agentic-core-evidence",
+      "source_path": "dist/assets/agentic-foundation-source.png",
+      "export_path": "Agentic-Core-User-To-MOA-Foundation.png",
+      "role": "foundation_concept",
+      "maturity": "Proposed foundation; human owner acceptance and six release checks; implementation/tests required.",
+      "source_commit_sha": "4f583cb90bff726eada9a180a0eeba4118981a73",
+      "git_blob_sha": "9660a6a5c0b16c3be979bdb69e2f7d1705717743",
+      "sha256": "74ea0455e8811c7a1c0f86c1668666c0fd9ae4f94c6a30a147cc1cb4147752a1",
+      "bytes": 1662765,
+      "unchanged_source_bytes": true,
+      "visual_review": "Diagram pixels reviewed; no candidate records, credentials or private endpoints visible."
+    },
+    {
+      "project": "agentic-core-evidence",
+      "source_path": "dist/aws/Agentic-Core-AWS-Architecture.drawio",
+      "export_path": "reference/Agentic-Core-Enterprise-Reference.drawio",
+      "role": "supplementary_scaled_reference",
+      "maturity": "Eight-page enterprise study with different scale/isolation assumptions; not scoped MVP deployment.",
+      "source_commit_sha": "4f583cb90bff726eada9a180a0eeba4118981a73",
+      "git_blob_sha": "ef5bcf86f189e0f0f4a7333b5ed408106120d107",
+      "sha256": "e6fdfa31b9d9e451f730e06f8289531d29f24c60811cfb1f9861356777e1638d",
+      "bytes": 985496,
+      "unchanged_source_bytes": true,
+      "visual_review": "Text/markup reviewed; no private repository URL or credential pattern found."
+    },
+    {
+      "project": "agentic-core-evidence",
+      "source_path": "dist/aws/Agentic-Core-AWS-Architecture.png",
+      "export_path": "reference/Agentic-Core-Enterprise-Reference.png",
+      "role": "supplementary_scaled_reference",
+      "maturity": "Expanded35-capability/68-interface reference; no AWS deployment proof.",
+      "source_commit_sha": "4f583cb90bff726eada9a180a0eeba4118981a73",
+      "git_blob_sha": "2837a4e8d05ae88b93230f2d6f8d3d3151fd2cb3",
+      "sha256": "e192fb04c83f049141aa471ee09ca4e96e3b3ba07b433e08447be143a9de670e",
+      "bytes": 3493467,
+      "unchanged_source_bytes": true,
+      "visual_review": "Diagram pixels reviewed; no candidate records, credentials or private endpoints visible."
+    },
+    {
+      "project": "agentic-core-evidence",
+      "source_path": "dist/aws/Deployment-Communication.png",
+      "export_path": "reference/Agentic-Core-Enterprise-Communication.png",
+      "role": "supplementary_scaled_reference",
+      "maturity": "Representative physical communication paths for enterprise study.",
+      "source_commit_sha": "4f583cb90bff726eada9a180a0eeba4118981a73",
+      "git_blob_sha": "8d27c858efde33f1dd26886c2ffbdf451494b1a4",
+      "sha256": "8cae0e56ed2073b77154be40a21244c70885c8a89006c98afd4328ffb38ba00b",
+      "bytes": 3445963,
+      "unchanged_source_bytes": true,
+      "visual_review": "Diagram pixels reviewed; no candidate records, credentials or private endpoints visible."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+name: Core synthetic tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: runtime/requirements.txt
+      - name: Install schema-validation dependencies
+        run: python -m pip install -r runtime/requirements.txt
+      - name: Run deterministic core tests
+        working-directory: runtime
+        run: python -B -m unittest discover -s tests -p "test_core*.py" -v

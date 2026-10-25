@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "verified_on": "2026-10-25",
+  "status": "PASS",
+  "tests_run": 35,
+  "failures": 0,
+  "errors": 0,
+  "source_commit_sha": "3a0df002d44effe062004e3e305e5375eb00e10b",
+  "scope": "Five deterministic core modules and two synthetic test modules only",
+  "command": "python -B -m unittest discover -s tests -p test_core*.py -v",
+  "python_version": "3.11.15",
+  "jsonschema_version": "4.26.0",
+  "network_or_model_calls": false,
+  "business_sends": false,
+  "environment_adjustment": "The test process used a writable temporary directory because the restricted Windows host default TEMP is inaccessible. Source and assertions were unchanged.",
+  "limitation": "The local dependency version is reported, not assumed to match the pinned installation. Fresh pinned dependency installation is checked by the included CI workflow."
+}

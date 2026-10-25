@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1500" viewBox="0 0 1800 1500" role="img" aria-labelledby="title desc">
+<title id="title">Agentic Core — AWS Target Architecture</title>
+<desc id="desc">Proposed junior Solutions Architect design case study. AWS resources have not been deployed or cloud runtime validation performed.</desc>
+<rect width="1800" height="1500" fill="#07111e"/>
+<text x="60" y="35" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="42" font-weight="600">Agentic Core — AWS Target Architecture</text>
+<text x="62" y="93" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">Governed workflow engineering | One workload account | Seven logical scopes share managed services</text>
+<text x="90" y="128" dominant-baseline="text-before-edge" fill="#ffb15d" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600">CUSTOMER ENVIRONMENT · OUTSIDE AWS</text>
+<text x="510" y="128" dominant-baseline="text-before-edge" fill="#ffb15d" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600">GLOBAL FRONTEND DELIVERY</text>
+<rect x="50" y="310" width="1700" height="1070" rx="14" fill="#0a1727" stroke="#3b5570" stroke-width="2"/>
+<text x="78" y="329" dominant-baseline="text-before-edge" fill="#75dfe1" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="600">AWS WORKLOAD ACCOUNT  /  EUROPE (LONDON) — eu-west-2</text>
+<text x="1230" y="331" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400">Managed services · no customer VPC</text>
+<polyline points="510,210 420,210" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="420,210 431.0,205.05 431.0,214.95" fill="#75dfe1"/>
+<rect x="434" y="189" width="52.00" height="24" fill="#0a1727"/>
+<text x="438" y="191" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Assets</text>
+<polyline points="255,265 255,380" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="255,380 250.05,369.0 259.95,369.0" fill="#75dfe1"/>
+<rect x="271" y="353" width="83.00" height="24" fill="#0a1727"/>
+<text x="275" y="355" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">PKCE login</text>
+<polyline points="420,235 675,235 675,380" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="675,380 670.05,369.0 679.95,369.0" fill="#75dfe1"/>
+<rect x="461" y="282" width="159.00" height="24" fill="#0a1727"/>
+<text x="465" y="284" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">HTTPS + access token</text>
+<polyline points="420,435 510,435" fill="none" stroke="#ffb15d" stroke-width="2" stroke-dasharray="7 6"/>
+<polygon points="510,435 499.0,439.95 499.0,430.05" fill="#ffb15d"/>
+<rect x="434" y="415" width="37.00" height="24" fill="#0a1727"/>
+<text x="438" y="417" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">JWT</text>
+<polyline points="840,435 930,435" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="930,435 919.0,439.95 919.0,430.05" fill="#75dfe1"/>
+<rect x="850" y="415" width="54.00" height="24" fill="#0a1727"/>
+<text x="854" y="417" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Invoke</text>
+<polyline points="1260,435 1350,435" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="1350,435 1339.0,439.95 1339.0,430.05" fill="#75dfe1"/>
+<rect x="1280" y="415" width="31.98" height="24" fill="#0a1727"/>
+<text x="1284" y="417" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Txn</text>
+<polyline points="1515,490 1515,590" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="1515,590 1510.05,579.0 1519.95,579.0" fill="#75dfe1"/>
+<rect x="1528" y="543" width="58.00" height="24" fill="#0a1727"/>
+<text x="1532" y="545" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Stream</text>
+<polyline points="1350,645 1260,645" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="1260,645 1271.0,640.05 1271.0,649.95" fill="#75dfe1"/>
+<rect x="1274" y="624" width="43.00" height="24" fill="#0a1727"/>
+<text x="1278" y="626" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Send</text>
+<polyline points="930,645 840,645" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="840,645 851.0,640.05 851.0,649.95" fill="#75dfe1"/>
+<rect x="860" y="624" width="34.00" height="24" fill="#0a1727"/>
+<text x="864" y="626" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Poll</text>
+<polyline points="255,590 255,535 1515,535 1515,490" fill="none" stroke="#ffb15d" stroke-width="2" stroke-dasharray="7 6"/>
+<polygon points="1515,490 1519.95,501.0 1510.05,501.0" fill="#ffb15d"/>
+<rect x="576" y="524" width="353.00" height="24" fill="#0a1727"/>
+<text x="580" y="526" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Query pending intent / reclaim expired relay lease</text>
+<polyline points="255,700 255,752 1095,752 1095,700" fill="none" stroke="#ffb15d" stroke-width="2" stroke-dasharray="7 6"/>
+<polygon points="1095,700 1099.95,711.0 1090.05,711.0" fill="#ffb15d"/>
+<rect x="450" y="739" width="284.00" height="24" fill="#0a1727"/>
+<text x="454" y="741" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Bounded replay of unresolved event IDs</text>
+<polyline points="675,700 675,810" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="675,810 670.05,799.0 679.95,799.0" fill="#75dfe1"/>
+<rect x="691" y="708" width="198.00" height="24" fill="#0a1727"/>
+<text x="695" y="710" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Approved contract + run ID</text>
+<polyline points="510,865 455,865 455,967 255,967 255,1020" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="255,1020 250.05,1009.0 259.95,1009.0" fill="#75dfe1"/>
+<polygon points="510,865 499.0,869.95 499.0,860.05" fill="#75dfe1"/>
+<rect x="81" y="946" width="211.00" height="24" fill="#0a1727"/>
+<text x="85" y="948" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">SDK request / JSON proposal</text>
+<polyline points="675,920 675,1020" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="675,1020 670.05,1009.0 679.95,1009.0" fill="#75dfe1"/>
+<polygon points="675,920 679.95,931.0 670.05,931.0" fill="#75dfe1"/>
+<rect x="691" y="970" width="194.00" height="24" fill="#0a1727"/>
+<text x="695" y="972" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Admitted plan / sealed refs</text>
+<polyline points="840,892 1095,892 1095,1020" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="1095,1020 1090.05,1009.0 1099.95,1009.0" fill="#75dfe1"/>
+<polygon points="840,892 851.0,887.05 851.0,896.95" fill="#75dfe1"/>
+<rect x="859" y="874" width="268.00" height="24" fill="#0a1727"/>
+<text x="863" y="876" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Invoke exact subject / return evidence</text>
+<polyline points="675,810 675,774 1515,774 1515,810" fill="none" stroke="#ffb15d" stroke-width="2" stroke-dasharray="7 6"/>
+<polygon points="1515,810 1510.05,799.0 1519.95,799.0" fill="#ffb15d"/>
+<polygon points="675,810 670.05,799.0 679.95,799.0" fill="#ffb15d"/>
+<rect x="951" y="750" width="233.00" height="24" fill="#0a1727"/>
+<text x="955" y="752" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Exact candidate / owner decision</text>
+<polyline points="675,1130 675,1172 1515,1172 1515,1130" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="1515,1130 1519.95,1141.0 1510.05,1141.0" fill="#75dfe1"/>
+<rect x="727" y="1159" width="227.00" height="24" fill="#0a1727"/>
+<text x="731" y="1161" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Write sealed candidate versions</text>
+<polyline points="1350,1075 1260,1075" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="1260,1075 1271.0,1070.05 1271.0,1079.95" fill="#75dfe1"/>
+<polygon points="1350,1075 1339.0,1079.95 1339.0,1070.05" fill="#75dfe1"/>
+<rect x="1266" y="1055" width="53.00" height="24" fill="#0a1727"/>
+<text x="1270" y="1057" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">S3 API</text>
+<polyline points="840,839 1298,839 1298,1285 1260,1285" fill="none" stroke="#ffb15d" stroke-width="2" stroke-dasharray="7 6"/>
+<polygon points="1260,1285 1271.0,1280.05 1271.0,1289.95" fill="#ffb15d"/>
+<rect x="1305" y="964" width="121.00" height="24" fill="#0a1727"/>
+<text x="1309" y="966" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Guarded release</text>
+<polyline points="1260,1285 1350,1285" fill="none" stroke="#75dfe1" stroke-width="2"/>
+<polygon points="1350,1285 1339.0,1289.95 1339.0,1280.05" fill="#75dfe1"/>
+<rect x="1263" y="1265" width="64.00" height="24" fill="#0a1727"/>
+<text x="1267" y="1267" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Handoff</text>
+<polyline points="1680,1285 1720,1285 1720,435 1680,435" fill="none" stroke="#ffb15d" stroke-width="2" stroke-dasharray="7 6"/>
+<polygon points="1680,435 1691.0,430.05 1691.0,439.95" fill="#ffb15d"/>
+<text x="1734" y="960" transform="rotate(-90 1734 960)" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400">Matching receipt to ledger</text>
+<rect x="90" y="155" width="330" height="110" rx="10" fill="#25364c" stroke="#3b5570" stroke-width="2"/>
+<polyline points="105,167 105,253" fill="none" stroke="#ffb15d" stroke-width="3"/>
+<text x="119" y="168" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Customer browser</text>
+<text x="119" y="198" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Describe · approve · review</text>
+<text x="119" y="222" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Accept exact tested candidate</text>
+<rect x="510" y="155" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="525,167 525,253" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="539" y="168" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">AWS Amplify Hosting</text>
+<text x="539" y="198" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Static application assets</text>
+<text x="539" y="222" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Managed global delivery</text>
+<rect x="90" y="380" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="105,392 105,478" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="119" y="393" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Amazon Cognito</text>
+<text x="119" y="423" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">PKCE authentication</text>
+<text x="119" y="447" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Identity is not project authority</text>
+<rect x="510" y="380" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="525,392 525,478" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="539" y="393" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">API Gateway HTTP API</text>
+<text x="539" y="423" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">JWT / scopes; HTTPS endpoints</text>
+<text x="539" y="447" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Submit · approve · accept</text>
+<rect x="930" y="380" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="945,392 945,478" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="959" y="393" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Intake Lambda</text>
+<text x="959" y="423" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Authorise owner / project</text>
+<text x="959" y="447" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Validate key and payload hash</text>
+<rect x="1350" y="380" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="1365,392 1365,478" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="1379" y="393" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Amazon DynamoDB</text>
+<text x="1379" y="423" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Requirement + receipt + outbox</text>
+<text x="1379" y="447" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Contract / run / release ledger</text>
+<rect x="90" y="590" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="105,602 105,688" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="119" y="603" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Scheduled recovery</text>
+<text x="119" y="633" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">EventBridge Scheduler + Lambda</text>
+<text x="119" y="657" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Query durable due outbox</text>
+<rect x="510" y="590" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="525,602 525,688" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="539" y="603" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Contract Engine Lambda</text>
+<text x="539" y="633" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Dedupe event; durable receipt</text>
+<text x="539" y="657" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Exact version + owner approval</text>
+<rect x="930" y="590" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="945,602 945,688" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="959" y="603" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Amazon SQS + DLQ</text>
+<text x="959" y="633" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Stable event references</text>
+<text x="959" y="657" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Redelivery and explicit failures</text>
+<rect x="1350" y="590" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="1365,602 1365,688" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="1379" y="603" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Streams / Relay Lambda</text>
+<text x="1379" y="633" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Relay durable outbox events</text>
+<text x="1379" y="657" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Keep pending until accepted</text>
+<rect x="510" y="810" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="525,822 525,908" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="539" y="823" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Core Controller</text>
+<text x="539" y="853" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Step Functions Standard + guards</text>
+<text x="539" y="877" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Current ledger controls dispatch</text>
+<rect x="1350" y="810" width="330" height="110" rx="10" fill="#25364c" stroke="#3b5570" stroke-width="2"/>
+<polyline points="1365,822 1365,908" fill="none" stroke="#ffb15d" stroke-width="3"/>
+<text x="1379" y="823" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Owner acceptance API</text>
+<text x="1379" y="853" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Lambda binds candidate + evidence</text>
+<text x="1379" y="877" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Separate from contract approval</text>
+<rect x="90" y="1020" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="105,1032 105,1118" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="119" y="1033" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Amazon Bedrock</text>
+<text x="119" y="1063" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Bounded data-only DAG proposal</text>
+<text x="119" y="1087" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Reviewed operators; no code</text>
+<rect x="510" y="1020" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="525,1032 525,1118" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="539" y="1033" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Plan checks + compiler</text>
+<text x="539" y="1063" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Core admission / Lambda compile</text>
+<text x="539" y="1087" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Pinned plan, runtime and PIC</text>
+<rect x="930" y="1020" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="945,1032 945,1118" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="959" y="1033" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Verifier Lambda</text>
+<text x="959" y="1063" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Separate role; trusted tests</text>
+<text x="959" y="1087" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Read exact bytes; report to Core</text>
+<rect x="1350" y="1020" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="1365,1032 1365,1118" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="1379" y="1033" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Private versioned S3</text>
+<text x="1379" y="1063" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Candidate / PIC / tests / evidence</text>
+<text x="1379" y="1087" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Separate prefixes and permissions</text>
+<rect x="930" y="1230" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="945,1242 945,1328" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="959" y="1243" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">Release Lambda</text>
+<text x="959" y="1273" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Six current checks; exact intent</text>
+<text x="959" y="1297" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Recheck authority and destination</text>
+<rect x="1350" y="1230" width="330" height="110" rx="10" fill="#101e30" stroke="#3b5570" stroke-width="2"/>
+<polyline points="1365,1242 1365,1328" fill="none" stroke="#75dfe1" stroke-width="3"/>
+<text x="1379" y="1243" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600">MOA package / receipt</text>
+<text x="1379" y="1273" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Exact S3 package + durable receipt</text>
+<text x="1379" y="1297" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Unknown stays UNCONFIRMED</text>
+<text x="64" y="1393" dominant-baseline="text-before-edge" fill="#f2f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">PIC = shared reviewed code: approval · ownership · permission scope · verification · bounded repair · release.</text>
+<text x="64" y="1421" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">k = 2 total candidate attempts. Core mediates all phases; owner acceptance is required before release.</text>
+<text x="64" y="1449" dominant-baseline="text-before-edge" fill="#c2cfdf" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">IAM roles · CloudWatch telemetry · audit/retention policies. Managed-service baseline; no customer VPC.</text>
+<text x="64" y="1480" dominant-baseline="text-before-edge" fill="#ffb15d" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600">DESIGN CASE STUDY  |  AWS RUNTIME VALIDATION PENDING</text>
+</svg>

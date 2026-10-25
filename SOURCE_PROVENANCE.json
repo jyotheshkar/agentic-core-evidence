@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0.0",
+  "exported_on": "2026-10-25",
+  "project": "Agentic Core",
+  "runtime_source_commit_sha": "3a0df002d44effe062004e3e305e5375eb00e10b",
+  "source_files": [
+    {
+      "path": "runtime/core/__init__.py",
+      "source_path": "runtime/core/__init__.py",
+      "source_blob_sha": "04d75095a48c899ab038c3c1c150d194a56310ac",
+      "source_sha256": "5c5322e0e7f6519b671119aeaf85d029ef934f7711a8e413bbecbef313bea95f",
+      "source_commit_sha": "3a0df002d44effe062004e3e305e5375eb00e10b",
+      "source_repository": "jyotheshkar/agentic-core",
+      "export_sha256": "5c5322e0e7f6519b671119aeaf85d029ef934f7711a8e413bbecbef313bea95f",
+      "export_git_blob_sha": "04d75095a48c899ab038c3c1c150d194a56310ac",
+      "source_bytes_preserved": true
+    },
+    {
+      "path": "runtime/core/algorithms.py",
+      "source_path": "runtime/core/algorithms.py",
+      "source_blob_sha": "a9f209b9b0067c79af2b5ae69fba8ac4fd98c132",
+      "source_sha256": "d3ee078a49a8a9a50287c17a1f9213e3718638c4ddf4c6cc3b36260c5d7ec1c4",
+      "source_commit_sha": "3a0df002d44effe062004e3e305e5375eb00e10b",
+      "source_repository": "jyotheshkar/agentic-core",
+      "export_sha256": "d3ee078a49a8a9a50287c17a1f9213e3718638c4ddf4c6cc3b36260c5d7ec1c4",
+      "export_git_blob_sha": "a9f209b9b0067c79af2b5ae69fba8ac4fd98c132",
+      "source_bytes_preserved": true
+    },
+    {
+      "path": "runtime/core/contracts.py",
+      "source_path": "runtime/core/contracts.py",
+      "source_blob_sha": "93aa6fb20a8e5f97eb497e5980fef5e428af8595",
+      "source_sha256": "669f0ed898b43e9a297fe94d0da67a2b279f1204ddf722a7f581cf7298d12cce",
+      "source_commit_sha": "3a0df002d44effe062004e3e305e5375eb00e10b",
+      "source_repository": "jyotheshkar/agentic-core",
+      "export_sha256": "669f0ed898b43e9a297fe94d0da67a2b279f1204ddf722a7f581cf7298d12cce",
+      "export_git_blob_sha": "93aa6fb20a8e5f97eb497e5980fef5e428af8595",
+      "source_bytes_preserved": true
+    },
+    {
+      "path": "runtime/core/engine.py",
+      "source_path": "runtime/core/engine.py",
+      "source_blob_sha": "280456214306aeec88a25fa267d05e0dbf160769",
+      "source_sha256": "2d6430b149bf021e50a63a84181ea7bf177a756055a6133871ea619bc5426845",
+      "source_commit_sha": "3a0df002d44effe062004e3e305e5375eb00e10b",
+      "source_repository": "jyotheshkar/agentic-core",
+      "export_sha256": "2d6430b149bf021e50a63a84181ea7bf177a756055a6133871ea619bc5426845",
+      "export_git_blob_sha": "280456214306aeec88a25fa267d05e0dbf160769",
+      "source_bytes_preserved": true
+    },
+    {
+      "path": "runtime/core/safety.py",
+      "source_path": "runtime/core/safety.py",
+      "source_blob_sha": "adf6b2dead2658902efe64c5849fa2b09c3c3c5e",
+      "source_sha256": "0eb6bef872c00d000194a7f731127c93ea7a34af2a44e9541fa63b9dbef006c6",
+      "source_commit_sha": "3a0df002d44effe062004e3e305e5375eb00e10b",
+      "source_repository": "jyotheshkar/agentic-core",
+      "export_sha256": "0eb6bef872c00d000194a7f731127c93ea7a34af2a44e9541fa63b9dbef006c6",
+      "export_git_blob_sha": "adf6b2dead2658902efe64c5849fa2b09c3c3c5e",
+      "source_bytes_preserved": true
+    },
+    {
+      "path": "runtime/tests/test_core_algorithms.py",
+      "source_path": "runtime/tests/test_core_algorithms.py",
+      "source_blob_sha": "30712364e784236f299a8ea912a9ab9c74f06017",
+      "source_sha256": "70eb8941f263f9576c0f2f49702b8d0fbfbce8a67592f9e0d63fee671f3c8cbf",
+      "source_commit_sha": "3a0df002d44effe062004e3e305e5375eb00e10b",
+      "source_repository": "jyotheshkar/agentic-core",
+      "export_sha256": "70eb8941f263f9576c0f2f49702b8d0fbfbce8a67592f9e0d63fee671f3c8cbf",
+      "export_git_blob_sha": "30712364e784236f299a8ea912a9ab9c74f06017",
+      "source_bytes_preserved": true
+    },
+    {
+      "path": "runtime/tests/test_core_engine.py",
+      "source_path": "runtime/tests/test_core_engine.py",
+      "source_blob_sha": "1e72ee489f61024f4e9f351461baf5213c32b302",
+      "source_sha256": "fed0e3e0e1c737c0f5a4ac21fda15002045c86c8a5270e08032e8e56f3554406",
+      "source_commit_sha": "3a0df002d44effe062004e3e305e5375eb00e10b",
+      "source_repository": "jyotheshkar/agentic-core",
+      "export_sha256": "fed0e3e0e1c737c0f5a4ac21fda15002045c86c8a5270e08032e8e56f3554406",
+      "export_git_blob_sha": "1e72ee489f61024f4e9f351461baf5213c32b302",
+      "source_bytes_preserved": true
+    },
+    {
+      "path": "runtime/requirements.txt",
+      "source_path": "runtime/requirements.txt",
+      "source_blob_sha": "e68f84e6d8eef37fc304885f90c24f44f887a05a",
+      "source_sha256": "98f8719c838520050cfd15e90be829921790c7e8db54d8981d3cd9ca64ad5260",
+      "source_commit_sha": "3a0df002d44effe062004e3e305e5375eb00e10b",
+      "source_repository": "jyotheshkar/agentic-core",
+      "export_sha256": "98f8719c838520050cfd15e90be829921790c7e8db54d8981d3cd9ca64ad5260",
+      "export_git_blob_sha": "e68f84e6d8eef37fc304885f90c24f44f887a05a",
+      "source_bytes_preserved": true
+    },
+    {
+      "path": "docs/architecture/agentic-core-foundation-v0.1.json",
+      "source_repository": "jyotheshkar/system-architecture-workspace-data",
+      "source_path": "workspace/foundation-reference.json",
+      "source_commit_sha": "dacd1ad369be24d5d0d8536ee10ed075e61feb23",
+      "source_blob_sha": "e12e2cc8917ff7ebec22ce01ca93a4981ee068b2",
+      "source_sha256": null,
+      "export_sha256": "6a66a4e15539e4a619bb0a3b8d6284278aeaa0f2d86dfacb5bd3594637ef6c55",
+      "export_git_blob_sha": "e12e2cc8917ff7ebec22ce01ca93a4981ee068b2",
+      "source_bytes_preserved": true
+    }
+  ],
+  "editorial_and_verification_files": [
+    {
+      "path": "README.md",
+      "sha256": "bfcb4bfdd0ada0b825b407d993897e6c261801426d2d7819e478d64778f537c4",
+      "origin": "New export documentation, CI or fresh exported-source verification; not copied private repository notices"
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "7a22c60dda1248482bdeb2a81ed470ea73c711f7bd038b77f62a84000a1b796e",
+      "origin": "New export documentation, CI or fresh exported-source verification; not copied private repository notices"
+    },
+    {
+      "path": "docs/architecture/README.md",
+      "sha256": "eb208c60b07a82029f6fa0a28556e0f3e81b78069f1d0b4950942bdcdc17cc8a",
+      "origin": "New export documentation, CI or fresh exported-source verification; not copied private repository notices"
+    },
+    {
+      "path": ".github/workflows/core-tests.yml",
+      "sha256": "fe8b56d0244f1bb0f68fe5c4e49e913090c3289e91c0a4b2ac46c6dc2ec387ff",
+      "origin": "New export documentation, CI or fresh exported-source verification; not copied private repository notices"
+    },
+    {
+      "path": "docs/verification/core-tests.json",
+      "sha256": "ce809be67a2e2e485f0758b551cf94f36776c3032365ce39dd67e13340849f7f",
+      "origin": "New export documentation, CI or fresh exported-source verification; not copied private repository notices"
+    },
+    {
+      "path": "docs/diagrams/README.md",
+      "origin": "Reviewed diagram source index or generated asset provenance manifest; individual asset hashes are recorded only inside diagram-manifest.json",
+      "sha256": "6d553e9769889095ed7ae1295d6f633aaf347dfad199964541a7e7da35f5ed13"
+    },
+    {
+      "path": "docs/diagrams/diagram-manifest.json",
+      "origin": "Reviewed diagram source index or generated asset provenance manifest; individual asset hashes are recorded only inside diagram-manifest.json",
+      "sha256": "5dc5e663f50a29b84496fbe4845985561356140ab39123734bd0dca99f4ffea3"
+    }
+  ],
+  "excluded": [
+    "Full private Git history and other branches",
+    "Operational records, transcripts, contacts, credentials and databases",
+    "Full skill/plugin library and native installation bundle",
+    "Historical SOL relationship diagram"
+  ],
+  "scope": "Actual September deterministic Python/SQLite excerpt, separately labelled October10foundation design, and October24scoped AWS case study plus supplementary reference diagrams. No full native release or AWS deployment inferred.",
+  "additional_source_sets": [
+    {
+      "manifest_path": "docs/diagrams/diagram-manifest.json",
+      "index_path": "docs/diagrams/README.md",
+      "source_product": "System Architecture Workspace",
+      "source_site_version": 81,
+      "source_commit_sha": "4f583cb90bff726eada9a180a0eeba4118981a73",
+      "source_commit_at": "2026-10-24T13:40:20Z",
+      "asset_count": 7,
+      "hash_policy": "Individual source-asset hashes live in the diagram manifest, avoiding duplicate binary hash lists.",
+      "scope": "Current scoped target, foundation concept and separately labelled supplementary enterprise reference; cloud validation pending."
+    }
+  ]
+}
