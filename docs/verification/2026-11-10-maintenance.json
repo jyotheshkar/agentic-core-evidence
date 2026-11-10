@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "verified_on": "2026-11-10",
+  "base_public_commit": "72de3f177f9046fdfbf49b4251c26b49d87070e4",
+  "base_tree": "24fa7cdf954020aa27f9de2a79865a3623848aed",
+  "original_provenance_scope": "SOURCE_PROVENANCE.json and core-tests.json are unchanged historical export evidence, not current-file assertions.",
+  "maintenance": {
+    "changed_existing_runtime": [
+      "runtime/core/engine.py"
+    ],
+    "fixes": [
+      "Preserve terminal run outcomes on late cancellation",
+      "Validate optional corpus titles and persist diagnostic failure"
+    ],
+    "new_behaviour": "Offline fixture demonstration for success, bounded retry and ambiguous-outcome handling"
+  },
+  "files": [
+    {
+      "path": "runtime/core/engine.py",
+      "sha256": "700e475460abc31b914aec26f2b7f056b507ee6eaccfb34912302908ee20ad5c"
+    },
+    {
+      "path": "runtime/examples/__init__.py",
+      "sha256": "e23c1e9ac5b79cf1cf2a9886c6bb40bf188da7e40d80c3002b487ae2211d4c76"
+    },
+    {
+      "path": "runtime/examples/support_case.py",
+      "sha256": "d30bb9feaf42408dd19fda1df2021c3de7838b25deefb2d7f0a732b105e57e69"
+    },
+    {
+      "path": "runtime/tests/test_support_demo.py",
+      "sha256": "e15a38ecf48531a46986e0c3cb22da975cc4f3c4310b01ed381a8b447b75ee91"
+    },
+    {
+      "path": "runtime/tests/test_support_regressions.py",
+      "sha256": "13e0436354fa1aa0581480c106cd6f50de1d008f22d2b5cc735e7cdb0fb225f0"
+    }
+  ],
+  "environment": {
+    "os": "Linux x86_64",
+    "python": "3.12.14",
+    "dependency_source": "Preinstalled environment; no fresh pinned installation performed",
+    "observed_packages": {
+      "jsonschema": "4.26.0",
+      "attrs": "26.1.0",
+      "jsonschema-specifications": "2025.9.1",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.6.3",
+      "typing_extensions": "4.16.0"
+    }
+  },
+  "unit_tests": {
+    "command": "python -B -m unittest discover -s tests -p 'test_*.py' -v",
+    "working_directory": "runtime",
+    "status": "PASS",
+    "tests_run": 41,
+    "failures": 0,
+    "errors": 0
+  },
+  "demonstrations": [
+    {
+      "scenario": "success",
+      "status": "SUCCEEDED",
+      "attempts": 1
+    },
+    {
+      "scenario": "retry",
+      "status": "SUCCEEDED",
+      "attempts": 2
+    },
+    {
+      "scenario": "ambiguous",
+      "status": "UNKNOWN_PENDING_RECONCILIATION",
+      "attempts": 1
+    }
+  ],
+  "limits": [
+    "Synthetic local cases and locally attested fixture receipts only",
+    "No model/provider/network operations or AWS deployment",
+    "Execution success does not establish business acceptance",
+    "Pinned fresh-install CI is separate from this local run"
+  ]
+}

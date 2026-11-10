@@ -2,6 +2,18 @@
 
 Agentic Core is Jyothesh Karnam's personal project for compiling bounded requirements into governed workflows. This public repository contains the actual deterministic Python and SQLite core excerpt, with synthetic tests and an independently labelled reference design.
 
+## Review and run the project
+
+| Goal | Evidence |
+|---|---|
+| Diagnose task states, errors and recovery | [Support runbook](docs/support/RUNBOOK.md) |
+| Understand implementation tradeoffs | [Engineering decisions](docs/engineering/DECISIONS.md) |
+| Review the current code checks | [10 November validation](docs/verification/2026-11-10-maintenance.md) |
+| Trace changes after the original export | [Maintenance provenance](docs/verification/2026-11-10-maintenance.json) |
+| Inspect the proposed AWS target | [Scoped architecture case study](docs/diagrams/Agentic-Core-AWS-Case-Study.md) |
+
+The maintained implementation is a local, sequential engine. Its host supplies reasoning and supported tools. The documentation below distinguishes the implemented core, reproducible fixtures and separately proposed AWS deployment.
+
 ## What this source implements
 
 - Typed requirements, workflow packages and output schemas; graph and version/hash validation.
@@ -10,7 +22,7 @@ Agentic Core is Jyothesh Karnam's personal project for compiling bounded require
 - Local SQLite runs, tasks, approvals and events; sequential task advancement, checkpoints, bounded retries, cancellation and ambiguous-outcome reconciliation.
 - Pending host requests and locally attested receipts. The desktop host supplies model reasoning and supported tool execution.
 
-The excerpt consists of **five core Python modules and two synthetic test modules**. It contains no mail-provider or model API adapter, hosted server, independently running background agents or operational job-search records. Local receipts are not provider signatures, and remote exactly-once execution is not established.
+The core consists of **five Python modules**. The current suite has the original two core test modules plus support-demonstration and maintenance-regression modules. It contains no mail-provider or model API adapter, hosted server, independently running background agents or operational job-search records. Local receipts are not provider signatures, and remote exactly-once execution is not established.
 
 ## Run the synthetic tests
 
@@ -21,10 +33,30 @@ python -m venv .venv
 # Activate the environment using your shell's normal command.
 python -m pip install -r runtime/requirements.txt
 cd runtime
-python -B -m unittest discover -s tests -p "test_core*.py" -v
+python -B -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-The tests construct synthetic cases and temporary SQLite state. They do not call models, send messages or access live career data. The exported-source verification result is recorded in [docs/verification/core-tests.json](docs/verification/core-tests.json). Its result applies only to these files, not to a separate full native-plugin release or an AWS deployment.
+The tests construct synthetic cases and temporary SQLite state. They do not call models, send messages or access live career data. The historical 35-test exported-source receipt remains at [docs/verification/core-tests.json](docs/verification/core-tests.json). Fresh checks of the maintained code are recorded separately in [the 10 November maintenance report](docs/verification/2026-11-10-maintenance.md). Neither result establishes a full native-plugin release or AWS deployment. GitHub Actions installs the pinned requirements and runs the complete current suite on Python 3.11.
+
+## Run the offline support demonstration
+
+After installing dependencies and changing to `runtime/`, run:
+
+```bash
+python -B -m examples.support_case --scenario success
+python -B -m examples.support_case --scenario retry
+python -B -m examples.support_case --scenario ambiguous
+```
+
+| Scenario | Expected final state | Attempts | Behaviour exercised |
+|---|---|---:|---|
+| `success` | `SUCCEEDED` | 1 | Reopen the checkpoint and accept the original bound fixture receipt |
+| `retry` | `SUCCEEDED` | 2 | Record a reversible failure, observe backoff, then accept a second-attempt receipt |
+| `ambiguous` | `UNKNOWN_PENDING_RECONCILIATION` | 1 | Preserve uncertainty without automatic retry |
+
+The demonstration uses the real engine with scripted `FIXTURE` receipts and an injected clock. It needs no API key, model download or network access once dependencies are installed. It reports the run ID, state, attempts and paths to SQLite and a redacted JSON export. Local outputs go beneath `runtime/.demo-state/<scenario>/`, which Git ignores; choose another writable directory with `--output-dir /path/to/local-demo`.
+
+The synthetic inventory symptom is illustrative. No inventory service is queried or changed, and execution success is separate from business acceptance. Use the [runbook](docs/support/RUNBOOK.md) to inspect evidence and prepare a reproducible engineering escalation.
 
 On a restricted Windows host, Python's default temporary directory may be inaccessible. Use a writable temporary directory for the test process and record that environment adjustment; do not change source assertions to obtain a passing run.
 
@@ -44,10 +76,11 @@ The supplementary enterprise diagrams use different scale and isolation assumpti
 
 ## Provenance and attribution
 
-The runtime source is copied from the exact reviewed source revision recorded in [SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json). It preserves the original logical content and relative layout. The reference JSON has its own source revision and blob identity.
+[SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json) preserves the original 25 October export's source identities and byte hashes. It describes that historical baseline, not the current bytes of every file. Maintenance on 10 November changed `runtime/core/engine.py`, added support examples/tests and improved documentation; the separate [maintenance provenance](docs/verification/2026-11-10-maintenance.json) records those changes. The earlier verification receipt has not been relabelled as evidence for the changed implementation. The reference JSON retains its own source revision and blob identity.
 
 Project author credited by the source: **Jyothesh Karnam**, with Codex host and model assistance. This is an independent personal project, not Amazon source code or an Amazon-endorsed product. Python and SQLite are runtime dependencies; schema validation uses `jsonschema`. See [NOTICE.md](NOTICE.md).
 
 ## Limitations
 
 The host remains responsible for reasoning and supported tools. Guardian checks operate inside this engine; they do not replace host/tool permissions. SQLite state is local. Synthetic coverage does not establish production reliability, unattended operation, a complete plugin installation or a live connection to QUASAR, ATLAS, NEBULA or PULSAR.
+

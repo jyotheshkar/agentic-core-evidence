@@ -185,8 +185,14 @@ class Engine:
             corpus = json.loads(raw.decode("utf-8-sig"))
         else:
             corpus = refs[args.get("corpus_ref", "input:policies")]
-        if not isinstance(corpus, list) or any(not isinstance(d, dict) or not isinstance(d.get("id"), str) or not isinstance(d.get("text"), str) for d in corpus):
-            raise CoreError("Corpus requires id and text")
+        if not isinstance(corpus, list) or any(
+            not isinstance(d, dict)
+            or not isinstance(d.get("id"), str)
+            or not isinstance(d.get("text"), str)
+            or not isinstance(d.get("title", ""), str)
+            for d in corpus
+        ):
+            raise CoreError("Corpus requires string id, text and optional title")
         if len({d["id"] for d in corpus}) != len(corpus):
             raise CoreError("Duplicate corpus source IDs")
         queries = refs.get(args.get("query_ref", "input:records"), [{"id": "requirement", "text": args.get("query", "")}])
@@ -373,7 +379,11 @@ class Engine:
 
     def cancel(self, run_id: str) -> dict:
         with self._connection() as con:
-            self._run(con, run_id)
+            run = self._run(con, run_id)
+            # A late/repeated cancellation must not overwrite a completed
+            # outcome or append an event implying new work was cancelled.
+            if run["status"] in TERMINAL:
+                return self._inspect(con, run_id)
             for record in self._tasks(con, run_id).values():
                 if record["status"] not in TERMINAL:
                     self._transition(con, record, "CANCELLED", reason="Local cancellation; does not roll back remote effects")
@@ -419,3 +429,4 @@ class Engine:
         temporary.write_text(json.dumps(redact(data), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         temporary.replace(target)
         return str(target)
+
