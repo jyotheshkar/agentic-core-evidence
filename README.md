@@ -84,3 +84,4 @@ Project author credited by the source: **Jyothesh Karnam**, with Codex host and 
 
 The host remains responsible for reasoning and supported tools. Guardian checks operate inside this engine; they do not replace host/tool permissions. SQLite state is local. Synthetic coverage does not establish production reliability, unattended operation, a complete plugin installation or a live connection to QUASAR, ATLAS, NEBULA or PULSAR.
 
+**Year provenance:** The `2026` suffix records this repository's creation year (created 2026-10-25). Later maintenance retains its own dates.
